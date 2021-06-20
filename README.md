@@ -16,7 +16,7 @@ REDIS_URL=redis://192.168.50.7
 ```
 
 ## 사용법
-### add
+### 크롤링 요청
 ```
 # curl -d '{"url": "https://apple.co/3cG3FiD"}' -H "Content-Type: application/json" "http://localhost:3000/api/v1/link"
 ```
@@ -26,16 +26,16 @@ REDIS_URL=redis://192.168.50.7
 }
 ```
 
-### get
+### 목록 요청
 ```
 curl "http://localhost:3000/api/v1/link"
 ```
 
+### 특정 링크 정보 조회
 ```
 curl "http://localhost:3000/api/v1/link?url=https://apple.co/3cG3FiD"
 ```
 
-#### 결과
 ```json
 {
   "response": {
@@ -67,11 +67,11 @@ curl "http://localhost:3000/api/v1/link?url=https://apple.co/3cG3FiD"
 }
 ```
 
+### 특정 링크 아이디로 정보 조회
 ```
 curl "http://localhost:3000/api/v1/link/60ced8b8997d2d2bda74d65e"
 ```
 
-#### 결과
 ```json
 {
   "response": {
@@ -103,8 +103,7 @@ curl "http://localhost:3000/api/v1/link/60ced8b8997d2d2bda74d65e"
 }
 ```
 
-
-### delete
+### 링크 삭제
 ```
 curl -X DELETE -d '{"url": "https://apple.co/3cG3FiD"}' -H "Content-Type: application/json" "http://localhost:3000/api/v1/link"
 ```
