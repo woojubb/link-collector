@@ -1,0 +1,67 @@
+{
+    "ignoreKeywords": [
+        "youtube",
+        "twitter"
+    ],
+    "crawler": {
+        "twitter.com": {
+            "crawling": false,
+            "store": false
+        },
+        "t.me": {
+            "allowQueryString": false
+        }
+    },
+    "category": {
+        "github": [
+            "github.com"
+        ],
+        "video": [
+            "youtube.com",
+            "twitch.tv",
+            "vimeo.com"
+        ],
+        "twitter": [
+            "twitter.com"
+        ],
+        "telegram": [
+            "t.me"
+        ],
+        "exchange": [
+            "bittrex.com",
+            "bitfront.me",
+            "okex.com",
+            "binance.us",
+            "binance.com"
+        ],
+        "news": [
+            "cointelegraph.com",
+            "zdnet.com",
+            "coindesk.com",
+            "techrepublic.com",
+            "medium.com",
+            "forbes.com",
+            "bloomberg.com",
+            "news.bitcoin.com",
+            "crypto-meth.com",
+            "publish0x.com",
+            "ehackingnews.com",
+            "coinnews.online",
+            "reddit.com",
+            "hackernoon.com",
+            "theblockcrypto.com",
+            "bitcoinmagazine.com",
+            "nytimes.com",
+            "computerworld.com",
+            "blogspot.com",
+            "cryptodaily.co.uk",
+            "thecryptoreport.com",
+            "thebitcoinstreetjournal.com",
+            "blockchaintechnology-news.com",
+            "cryptobits.news",
+            "cryptonews.com",
+            "newsbtc.com",
+            "steemit.com"
+        ]
+    }
+}
